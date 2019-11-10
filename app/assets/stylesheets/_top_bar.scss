@@ -1,10 +1,11 @@
 .top-bar{
-  height: 20px;
+  height: 80px;
   display: flex;
   position: relative;
   font-family: 'Liu Jian Mao Cao', cursive;
   font-family: 'Anton', sans-serif;
   letter-spacing: 3px;
+
   &__title{
     position: absolute;
     padding-left: 50px;
