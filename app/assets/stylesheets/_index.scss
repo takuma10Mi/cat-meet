@@ -3,11 +3,24 @@
     height: 300px;
     padding-top: 100px;
     &__text{
-      font-size: 40px;
+      font-size: 50px;
       text-align: center;
-      image{
-        height: 450px;
-        width: 300px;
+      position: relative;
+      background-color: #008080;
+      padding: 50px 0;
+      font-family: 'Sawarabi Mincho', sans-serif;
+      .image-tag-one{
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: 50px;
+      }
+      #image-gabu{
+        left: 10px;
+      }
+      #image-mei{
+        right: 10px;
       }
     }
   }
