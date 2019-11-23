@@ -5,11 +5,16 @@
   font-family: 'Liu Jian Mao Cao', cursive;
   font-family: 'Anton', sans-serif;
   letter-spacing: 3px;
+  
 
   &__title{
     position: absolute;
     padding-left: 50px;
     font-size: 60px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
   }
   &__nav{
     display: flex;
@@ -18,8 +23,10 @@
     padding-right: 0px;
     font-size: 40px;
     right: 0;
+    
     &__list{
       padding: 0 20px;
+      text-decoration: none;
     }
   }
 }

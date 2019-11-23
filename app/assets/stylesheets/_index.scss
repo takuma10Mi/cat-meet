@@ -1,13 +1,17 @@
 .html{
   .about{
-    height: 300px;
-    padding-top: 100px;
+    height: 450px;
+    padding: 50px 0;
+    background: #5433FF;
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
     &__text{
       font-size: 50px;
       text-align: center;
       position: relative;
-      background-color: #008080;
-      padding: 50px 0;
+      
+      
+      
       font-family: 'Sawarabi Mincho', sans-serif;
       .image-tag-one{
         border-radius: 50%;
@@ -25,8 +29,69 @@
     }
   }
   .history{
+    height: 800px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,117,253,1) 100%);
+    filter: brightness(50%);
+    &__box{
+      position: relative;
+      height: 245px;
+      width: 45px;
+      &__start{
+        top: 72px;
+        left: 80px;
+        width: 45px;
+        height: 45px;
+        background-color:whitesmoke;
+        border-radius: 50%;
+        position: absolute;
+      }
+      &__start::after{
+        content: '';
+        display: inline-block;
+        background-color:whitesmoke;
+        height: 100px;
+        width: 10px;
+        top: 50%;
+        left: 38%;
+        position: absolute;
+      }
+      &__circle{
+        top: 72px;
+        left: 80px;
+        width: 45px;
+        height: 45px;
+        background-color:whitesmoke;
+        border-radius: 50%;
+        position: absolute;
+      }
+      &__circle::before{
+        content: '';
+        display: inline-block;
+        background-color:whitesmoke;
+        height: 145px;
+        width: 10px;
+        bottom: 50%;
+        left: 38%;
+        position: absolute;
+  
+      }
+      &__circle::after{
+        content: '';
+        display: inline-block;
+        background-color:whitesmoke;
+        height: 100px;
+        width: 10px;
+        top: 50%;
+        left: 38%;
+        position: absolute;
+  
+      }
+    }
+    &
     &__text{
-
+      height: 800px;
+      width: 70%;
     }
   }
   .image{
