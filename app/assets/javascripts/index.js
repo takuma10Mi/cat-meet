@@ -21,5 +21,10 @@ $(function() {
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
-
+  $(document).on('turbolinks:load', function(){
+    $('.slick').slick({
+      autoplay:true,
+      dots:true,
+    });
+  });
 });

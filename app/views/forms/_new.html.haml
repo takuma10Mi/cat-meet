@@ -1,0 +1,19 @@
+/ Contact
+%section#contact
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading.text-uppercase Contact Us
+        %h3.section-subheading.text-muted お問合わせはこちらから
+    .row
+      .col-lg-12
+        / form
+        = form_for(@form, url: forms_create_path) do |f|
+          .form-group
+            = f.text_field :name, class: 'form-control', placeholder: 'あなたのお名前 *', id: 'name'
+          .form-group
+            = f.text_field :email, class: 'form-control', placeholder: 'メールアドレス *', id: 'email'
+          .form-group
+            = f.text_area :content, class: 'form-control', placeholder: 'お問い合わせ内容 *', id: 'content'
+          .clearfix
+            = f.submit "メッセージを送信する", class:'btn btn-primary btn-xl text-uppercase'

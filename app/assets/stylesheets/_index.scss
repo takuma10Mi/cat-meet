@@ -2,43 +2,54 @@
   .about{
     height: 450px;
     padding: 50px 0;
-    background: #5433FF;
-    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
-    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    background-image: url(IMG_5311.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    color: white;
     &__text{
-      font-size: 50px;
+      font-size: 29px;
       text-align: center;
       position: relative;
-      
-      
-      
       font-family: 'Sawarabi Mincho', sans-serif;
-      .image-tag-one{
-        border-radius: 50%;
-        height: 350px;
-        width: 350px;
-        position: absolute;
-        top: 50px;
-      }
-      #image-gabu{
-        left: 10px;
-      }
-      #image-mei{
-        right: 10px;
-      }
+      top: 127px;
     }
+  }
+  .about:before{
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
   }
   .history{
     height: 800px;
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,117,253,1) 100%);
     filter: brightness(50%);
+
+    h1{
+      font-size: 30px;
+      height: 30px;
+      text-align: center;
+      color: white;
+    }
     &__box{
       position: relative;
-      height: 245px;
+      height: 190px;
       width: 45px;
       &__start{
-        top: 72px;
+        top: 45px;
         left: 80px;
         width: 45px;
         height: 45px;
@@ -50,7 +61,7 @@
         content: '';
         display: inline-block;
         background-color:whitesmoke;
-        height: 100px;
+        height: 600px;
         width: 10px;
         top: 50%;
         left: 38%;
@@ -65,39 +76,30 @@
         border-radius: 50%;
         position: absolute;
       }
-      &__circle::before{
-        content: '';
-        display: inline-block;
-        background-color:whitesmoke;
-        height: 145px;
-        width: 10px;
-        bottom: 50%;
-        left: 38%;
-        position: absolute;
-  
-      }
-      &__circle::after{
-        content: '';
-        display: inline-block;
-        background-color:whitesmoke;
-        height: 100px;
-        width: 10px;
-        top: 50%;
-        left: 38%;
-        position: absolute;
-  
-      }
+      
     }
-    &
     &__text{
       height: 800px;
       width: 70%;
     }
   }
   .image{
-
+    height: 450px;
+    width: 100%;
+    background-color: yellowgreen;
+    h1{
+      font-size: 30px;
+      height: 30px;
+      text-align: center;
+      color: white;
+    }
   }
   .contact{
-
+    height: 450px;
+    width: 100%;
+    background-color: rebeccapurple;
+    .icon{
+      font-size: 40px;
+    }
   }
 }
