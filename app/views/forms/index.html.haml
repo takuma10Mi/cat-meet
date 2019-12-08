@@ -6,44 +6,68 @@
       %br 「がぶちゃん・めいちゃん」を
       %br 紹介するサイトです。
       %i.fas.fa-cat.fa-spin
-
-      -# %img{alt: "がぶちゃん", src: "/assets/img_5324.jpg", class: "image-tag-one", id:"image-gabu"}/
-      -# %img{alt: "めいちゃん", src: "/assets/img_5331.jpg", class: "image-tag-one", id:"image-mei"}/
   .history{ id: "2"}
     %h1
       history
     .history__box
       .history__box__start
+      .history__box__text
+        %p 2018/4 子ねこの里親会でもらってきた。
+        %br
+        %p 双子の猫ちゃん黒→めいちゃん三毛猫→がぶちゃん
     .history__box
       .history__box__circle
+      .history__box__text
+        %p 2018/10 約半年で3kgから5kgに成長
+      -# .history__box__img
+      -#   %img{alt: "", src: "/assets/IMG_5428.JPG"}
+      -#   %img{alt: "", src: "/assets/IMG_5429.JPG"}
     .history__box
       .history__box__circle
+      .history__box__text
     .history__box
       .history__box__circle
-    .history__text
-      
+      .history__box__text
   .image{ id: "3"}
     %h1
       image
-    .slick
-      %img(src="IMG_4739.JPG" alt="")/
-      %img(src="IMG_4882.JPG" alt="")/
-      %img(src="IMG_4967.JPG" alt="")/
-      %img(src="IMG_5143.JPG" alt="")/
-      %img(src="IMG_5178.JPG" alt="")/
-      %img(src="IMG_5283.JPG" alt="")/
-      %img(src="IMG_5311.JPG" alt="")/
-      %img(src="IMG_5324.JPG" alt="")/
-      %img(src="IMG_5325.JPG" alt="")/
-      %img(src="IMG_5327.JPG" alt="")/
-      %img(src="IMG_5330.JPG" alt="")/
-      %img(src="IMG_5331.JPG" alt="")/
+    .multiple
+      %div
+        %img{:alt => "", :src => "/assets/IMG_4739.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_4882.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_4967.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5143.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5178.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5283.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5311.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5324.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5325.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5327.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5330.JPG"}/
+      %div
+        %img{:alt => "", :src => "/assets/IMG_5331.JPG"}/
   .contact{ id:"4"}
+    .contact__box
+      = form_for(@form, url: forms_create_path) do |f|
+        .form-group
+          = f.text_field :name, class: 'form-control1', placeholder: 'あなたのお名前 *', id: 'name'
+        .form-group
+          = f.text_field :email, class: 'form-control2', placeholder: 'メールアドレス *', id: 'email'
+        .form-group
+          = f.text_area :content, class: 'form-control3', placeholder: 'お問い合わせ内容 *', id: 'content'
+        .clearfix
+          = f.submit "メッセージを送信する", class:'btn btn-primary btn-xl text-uppercase'
     .contact_text
       = fa_icon 'envelope', class: 'icon'
-  = render "new"
-
-  .your-class
-  %div your content 1
-  %div your content 2
-  %div your content 3
+  
+  

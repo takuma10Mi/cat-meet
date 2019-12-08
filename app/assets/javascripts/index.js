@@ -27,4 +27,9 @@ $(function() {
       dots:true,
     });
   });
+  $('#btn btn-primary btn-xl text-uppercase').on('submit', function(e){
+    e.preventDefault();
+    $('.html').animate({scrollTop: $('.html')[0].scrollHeight}, 'fast');
+    $('.contents__btn__form__box__submit').removeAttr('data-disable-with');
+});
 });

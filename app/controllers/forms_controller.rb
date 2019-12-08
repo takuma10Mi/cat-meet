@@ -4,8 +4,8 @@ class FormsController < ApplicationController
   end
 
   def create
-    @form = Form.create(form_params)
-    
+    Form.create(form_params)
+    redirect_to action: 'index'
   end
 
 private

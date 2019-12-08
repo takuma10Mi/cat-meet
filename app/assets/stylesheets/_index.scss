@@ -36,7 +36,6 @@
     height: 800px;
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,117,253,1) 100%);
-    filter: brightness(50%);
 
     h1{
       font-size: 30px;
@@ -56,6 +55,24 @@
         background-color:whitesmoke;
         border-radius: 50%;
         position: absolute;
+      }
+      &__text{
+        position: absolute;
+        height: 139px;
+        width: 700px;
+        background-color: gray;
+        left: 300px;
+        top: 28px;
+        border-radius: 10px;
+        padding-top: 5px;
+        p{
+          color: white;
+          font-size: 30px;
+        }
+      }
+      &__img{
+        position: absolute;
+        
       }
       &__start::after{
         content: '';
@@ -84,20 +101,77 @@
     }
   }
   .image{
-    height: 450px;
+    height: 700px;
     width: 100%;
-    background-color: yellowgreen;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,117,253,1) 100%);
+    position: relative;
     h1{
       font-size: 30px;
       height: 30px;
       text-align: center;
       color: white;
+      padding-bottom: 40px;
     }
+    .multiple {
+      padding: 0;
+    
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      div {
+        margin: 0 5px;
+      }
+    
+      .slick-next {
+        right: 17px;
+        z-index: 100;
+      }
+    
+      .slick-prev {
+        left: 23px;
+        z-index: 100;
+      }
+      .slick-dots{
+        top: -34px;
+      }
+    }
+    
   }
   .contact{
     height: 450px;
     width: 100%;
-    background-color: rebeccapurple;
+    background: linear-gradient(#05FBFF, #1D62F0 ) fixed;
+    position: relative;
+    padding: 20px;
+    &__box{
+      position: absolute;
+      top: 70px;
+      left: 140px;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center;
+      .form-control1{
+        width:300px;
+        height:30px;
+      }
+      .form-control2{
+        width:300px;
+        height:30px;
+        padding: 20px;
+      }
+      .form-control3{
+        width:400px;
+        height:100px;
+      }
+      .btn{
+        color: blanchedalmond;
+      }
+
+    }
     .icon{
       font-size: 40px;
     }
